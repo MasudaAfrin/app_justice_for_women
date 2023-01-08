@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/cardbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#ececec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:background="@drawable/btnfollow"
+        android:id="@+id/followbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="20dp"
+        android:text="Follow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        tools:ignore="UnknownId" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="359dp"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/blackgradient"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/followbtn"
+        android:layout_marginStart="84dp"
+        android:text="Title"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="84dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/nbfollower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/followbtn"
+        android:layout_alignStart="@+id/title"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        tools:ignore="UnknownId"
+        android:layout_alignLeft="@+id/title" />
+</RelativeLayout>
